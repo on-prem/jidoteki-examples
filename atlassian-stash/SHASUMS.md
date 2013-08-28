@@ -3,7 +3,7 @@
 2650be2f4b537cbbbd5d97cd981304e159688aa5ccedb6e71e264e7e1b6414dc  ./installation/preseed.cfg
 a155c304a507ac82abb586d59116ae5e8443cdd0ca65e5be1ae8dd38214f70f1  ./provisioning/manifests/site.pp
 5abf182fb977da622283967c052078fed84da3921c6c54590be849b49cebba72  ./provisioning/modules/stash/files/etc/init.d/stash
-988cdc1ad4b772ef548701ff971a6e280406f2481c7f4dff0fb276d48908d62c  ./provisioning/modules/stash/manifests/init.pp
+a3e01f8e8c81bf023925c9f239cf7d9687f9358f47c236b10f3539a3d9b4622a  ./provisioning/modules/stash/manifests/init.pp
 28d8ef78b50cc2627ed36a4c8bffa23e634ea46ad45942f95753db1e860321c5  ./provisioning/modules/stash/templates/setenv.sh.erb
 4ed880fc58cbc443c468bac890b4ee081ef63532b130720f1ba2e16ba0ac9acb  ./provisioning_script.sh
 8108551ea9e35a57ac914e1fea15d3959b528153d28195b50000ee9b0c695e3a  ./README.md
