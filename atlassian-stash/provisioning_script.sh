@@ -12,7 +12,7 @@ fail_and_exit() {
 
 pushd /root
   # extract our puppet files
-	$UNZIP master.zip || fail_and_exit
+	$UNZIP -o master.zip || fail_and_exit
 
 	pushd jidoteki-examples-master/atlassian-stash/provisioning || fail_and_exit
 		# run puppet in standalone mode
