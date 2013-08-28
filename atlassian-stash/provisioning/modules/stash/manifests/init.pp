@@ -61,6 +61,7 @@ class stash {
     mode        => '0750',
     owner       => 'stash',
     group       => 'stash',
+    require     => Exec['download_stash'],
   }
 
   # Fix stash-home dir permissions (and make sure puppet never deletes it)
@@ -110,6 +111,7 @@ class stash {
     provider    => debian,
     require     => [
       File["${stash_home}"],
+      File['/home/stash/stash-latest/bin/setenv.sh'],
       File['/etc/init.d/stash'],
       Package['openjdk-7-jdk'],
     ],
