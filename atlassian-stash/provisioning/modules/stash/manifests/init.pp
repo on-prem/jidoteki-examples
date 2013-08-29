@@ -46,13 +46,18 @@ class stash {
     target      => "/home/stash/atlassian-stash-${stash_version}",
   }
 
+  # Create stash group
+  group { 'stash':
+    ensure      => present,
+  }
+
   # Create stash user
   user { 'stash':
     ensure      => present,
-    uid         => '1000',
     gid         => 'stash',
     shell       => '/bin/bash',
     home        => '/home/stash',
+    managehome  => true,
   }
 
   # Fix stash user dir permissions
