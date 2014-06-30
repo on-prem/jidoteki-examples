@@ -1,0 +1,25 @@
+# myapp role
+
+- name: Copy myapp.json to a temp dir
+  copy: >
+    src=myapp.json
+    dest=/tmp/myapp.json
+    owner=root
+    group=root
+    mode=0644
+    backup=no
+  tags:
+    - myapp
+    - json
+
+- name: Copy myapp.conf to a temp dir
+  template: >
+    src=myapp.conf.j2
+    dest=/tmp/myapp.conf
+    owner=root
+    group=root
+    mode=0644
+    backup=no
+  tags:
+    - myapp
+    - conf

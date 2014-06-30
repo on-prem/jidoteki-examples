@@ -1,0 +1,7 @@
+# Example for provisioning a virtual appliance using jidoteki.com
+
+- hosts: myappliance
+  gather_facts: true
+  sudo: true
+  roles:
+    - myapp
